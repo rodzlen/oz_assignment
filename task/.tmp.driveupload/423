@@ -22,12 +22,84 @@
    "metadata": {},
    "source": [
     "<span style=\"font-size:80%\">[문제1]<br><br></span>\n",
-    "```Python으로 변수를 생성하는 방법으로 올바른 것을 고르세요```\n",
+    "```실수를 정수로 만드는 식으로 올바른 것을 고르세요```\n",
     "\n",
-    "1. number == 20\n",
-    "2. 100 == number\n",
-    "3. number(7)\n",
-    "4. number = 7"
+    "1. str(3.5)\n",
+    "2. int(3.5)\n",
+    "3. float(3.5)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<span style=\"color:red\">답변</span>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "----"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<span style=\"font-size:80%\">[문제2]<br><br></span>\n",
+    "```실수 3.5의 type과 동일한 것을 고르세요```\n",
+    "\n",
+    "1. float(17//3)\n",
+    "2. int(10)-9\n",
+    "3. float11/2\n",
+    "4. float(10)-2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<span style=\"color:red\">답변</span>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1, 4"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "----"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<span style=\"font-size:80%\">[문제3]<br><br></span>\n",
+    "```type(3.0 + 7.0)의 결과로 올바른 것을 고르세요```\n",
+    "\n",
+    "1. 10\n",
+    "2. 10.0\n",
+    "3. int\n",
+    "4. float"
    ]
   },
   {
@@ -55,17 +127,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "<span style=\"font-size:80%\">[문제2]<br><br></span>\n",
-    "```다음 중 올바르지 않은 것을 골라주세요```\n",
+    "<span style=\"font-size:80%\">[문제4]<br><br></span>\n",
+    "```float(5)의 결과로 올바른 것을 고르세요```\n",
     "\n",
-    "이름 = \"김오즈\"<br>\n",
-    "나이 = 14<br>\n",
-    "소속 = \"마법중\"<br>\n",
-    "등급 = 3<br>\n",
-    "\n",
-    "1. 이름 + 소속\n",
-    "2. 나이 + 등급\n",
-    "3. 소속 + 등급"
+    "1. 5\n",
+    "2. `<class float>`\n",
+    "3. 5.0\n",
+    "4. type error"
    ]
   },
   {
@@ -93,84 +161,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "<span style=\"font-size:80%\">[문제3]<br><br></span>\n",
-    "```아래 변수의 type으로 올바른것을 골라주세요```\n",
-    "\n",
-    "퀴즈 = \"스페인에서 카리나를 보고 하는 말은?\"<br>\n",
-    "type(퀴즈)"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<span style=\"color:red\">답변</span>"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "str"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "----"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<span style=\"font-size:80%\">[문제4]<br><br></span>\n",
-    "```다음 중 변수 이름으로 사용할 수 없는 것을 모두 골라주세요```\n",
-    "\n",
-    "1. 78abc\n",
-    "2. ABC\n",
-    "3. _ABC\n",
-    "4. _hello%2\n",
-    "5. for"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<span style=\"color:red\">답변</span>"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "1,5"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "----"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
     "<span style=\"font-size:80%\">[문제5]<br><br></span>\n",
-    "```다음 중 변수와 연산자의 사용 방법으로 올바르지 않은 것을 모두 골라주세요```\n",
+    "```int(13 / 2)의 결과로 올바른 것을 고르세요```\n",
     "\n",
-    "x = 3\n",
-    "y = 7\n",
-    "\n",
-    "1. x = x + y\n",
-    "2. x // 2\n",
-    "3. z >< x\n",
-    "4. y += x\n",
-    "5. ++x"
+    "1. 6.5\n",
+    "2. 1\n",
+    "3. 6\n",
+    "4. 6.0"
    ]
   },
   {
@@ -184,7 +181,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "3, 5"
+    "3"
    ]
   }
  ],
