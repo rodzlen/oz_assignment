@@ -1,5 +1,5 @@
 --  create database db_test;
--- use db_test;
+ use db_test;
 -- 
 -- users 테이블 생성
 -- create table users(
@@ -142,29 +142,10 @@ join raw_materials r on o.raw_material_id = r.id
 join suppliers s on o.supplier_id = s.id
 group by r.name;
 	
-SELECT 
-    raw_material_id, 
-    supplier_id, 
-    COUNT(*) AS occurrence 
-FROM 
-    order_records 
-GROUP BY 
-    raw_material_id, supplier_id
-HAVING 
-    occurrence > 1;
 
-SELECT 
-    r.name AS raw_material_name, 
-    COUNT(DISTINCT o.supplier_id) AS '공급업체 수'
-FROM 
-    (SELECT DISTINCT raw_material_id, supplier_id FROM order_records) o
-JOIN 
-    raw_materials r ON o.raw_material_id = r.id
-GROUP BY 
-    r.name;
-DELETE FROM order_records
-WHERE id NOT IN (
-    SELECT MIN(id)
-    FROM order_records
-    GROUP BY raw_material_id, supplier_id
-);
+select r.name, count(distinct s.name) as 공급업체수 from order_records o 
+join raw_materials r on o.raw_material_id = r.id
+join suppliers s on o.supplier_id = s.id
+group by r.name;
+
+
