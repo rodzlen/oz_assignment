@@ -18,16 +18,16 @@
             <fieldset id="userinfo">
                 <legend>개인정보</legend>
                 <label for="name">이름: </label>
-                <input id=name type="text">
+                <input id=name type="text" name="name">
                 <br>
                 <label for="phone">연락처: </label>
-                <input id=phone type="number">
+                <input id=phone type="number" name="phone">
                 <br>
                 <label for="age">나이: </label>
-                <input id=age type="number">
+                <input id=age type="number" name="age">
                 <br>
                 <label for="gender">성별: </label>
-                <select id="gender">
+                <select id="gender" name="gender">
                     <option>남자</option>
                     <option>여자</option>
                     <option>헬리콥터</option>
@@ -37,7 +37,7 @@
             <fieldset id="survay">
                 <legend>설문</legend>
                 <label for="hobby">취미</label>
-                <input id="hobby" type="text">
+                <input id="hobby" type="text" name="hobby">
                 <br>
             <p>직업을 선택하세요</p>
             <label >학생 <input type="radio" value="학생" name="job"></label>
@@ -48,7 +48,7 @@
             </fieldset>
             <fieldset id ='extra'>
                 <legend>기타 의견</legend>
-                <textarea></textarea>
+                <textarea name="etc"></textarea>
             </fieldset>
             <input type="submit">
         </form>
