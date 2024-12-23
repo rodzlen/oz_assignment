@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문 양식</title>
+</head>
+<style>
+</style>
+<body>
+    <header>
+        <h1>설문조사 양식</h1>
+    </header>
+    <hr>
+    <main>
+        <div>
+        <form id="asd">
+            <fieldset id="userinfo">
+                <legend>개인정보</legend>
+                <label for="name">이름: </label>
+                <input id=name type="text">
+                <br>
+                <label for="phone">연락처: </label>
+                <input id=phone type="number">
+                <br>
+                <label for="age">나이: </label>
+                <input id=age type="number">
+                <br>
+                <label for="gender">성별: </label>
+                <select id="gender">
+                    <option>남자</option>
+                    <option>여자</option>
+                    <option>헬리콥터</option>
+                    <option>유니콘</option>
+                </select>
+            </fieldset>
+            <fieldset id="survay">
+                <legend>설문</legend>
+                <label for="hobby">취미</label>
+                <input id="hobby" type="text">
+                <br>
+            <p>직업을 선택하세요</p>
+            <label >학생 <input type="radio" value="학생" name="job"></label>
+            <label >무직(개백수)<input type="radio" value="무직" name="job"></label>
+            <label>주부 <input type="radio" value="주부" name="job"></label>
+            
+                
+            </fieldset>
+            <fieldset id ='extra'>
+                <legend>기타 의견</legend>
+                <textarea></textarea>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </div>
+    </main>
+    <hr>
+    <footer>
+        <div align="center">
+            <p>참여해 주셔서 감사합니다.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
