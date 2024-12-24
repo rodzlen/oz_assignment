@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅방</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .chat-container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-box {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow-y: scroll;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .chat-box .message {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e2e2e2;
+            border-radius: 5px;
+        }
+
+        .chat-box .message.user {
+            background-color: #d1e7dd;
+            text-align: right;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 15%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chatBox">
+        </div>
+        <input type="text" id="messageInput" placeholder="Type a message..." />
+        <button >Send</button>
+    </div>
+</body>
+</html>
