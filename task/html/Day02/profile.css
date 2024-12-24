@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+}
+html{
+    background-color: beige;
+}
+body{
+    width: 640px;
+    margin: auto;
+}
+#extra{
+    height: 200px;
+    border: solid 2px;
+}
+#extra h2{
+    text-align: center;
+}
+img{
+    border:darkkhaki solid 1px;
+    border-radius: 20%;
+    width: 250px;
+    height: 250px;
+}
+h1{
+    font-size: large;
+    color:green;
+}
+#introduce{
+    color:rgb(61, 86, 86);
+}
