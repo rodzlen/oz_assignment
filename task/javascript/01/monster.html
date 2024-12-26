@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        
+        let monsterHp = 100;
+        let container = document.getElementById('container')
+
+        let h1 = document.createElement('h1')
+
+        let attackcount=0
+        let p = document.createElement('p')
+
+        h1.textContent = '게임을 시작합니다.'
+        container.append(h1)
+
+        let a = parseInt(prompt('입힐 데미지를 입력하세요'))
+        if (a>0){
+            while(monsterHp>=0){
+                const w = document.createElement('p')
+
+                w.textContent = `${a}의 데미지를 입혔습니다.`
+                monsterHp -= a
+                container.append(w)
+                const att = document.createElement('strong')
+                let p1 = document.createElement('p')
+                if(monsterHp>0){
+                    att.textContent= `몬스터의 남은 hp: ${monsterHp}`
+                    p1.textContent= `${attackcount}회 공격하였습니다.`
+                    attackcount++
+                }else{
+                    att.textContent = '몬스터의 남은 hp: 0'
+                }
+                att.style.color = 'green'
+                container.append(att)
+                container.append(p1)
+            }
+            const q = document.createElement('p')
+            q.textContent = '축하합니다 몬스터를 처치했습니다.'
+            container.append(q)
+        }else{
+            alert('데미지를 잘못 입력하였습니다. 게임을 종료합니다.')
+        }
+        </script>
+</body>
+</html>
