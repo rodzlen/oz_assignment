@@ -4,8 +4,8 @@ from api import book_blp
 
 app = Flask(__name__)
 
-app.config['APT_TITLE'] = 'Book API'
-app.config['API VERSION'] = 'v1'
+app.config['API_TITLE'] = 'Book API'
+app.config['API_VERSION'] = 'v1'
 app.config['OPENAPI_VERSION'] = '3.0.2'
 app.config['OPENAPI_URL_PREFIX'] = "/"
 app.config['OPENAPI_SWAGGER_UI_PATH'] = "/swagger-ui-doc"
